@@ -1,0 +1,77 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f7f7;
+    color: #222;
+    min-height: 100vh;
+    padding: 24px 20px 40px;
+    -webkit-tap-highlight-color: transparent; /* 去掉手机上点击的蓝色高亮 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.join-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    outline: none;
+}
+
+.join-btn:active {
+    background: #eee;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.game-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* 手指按下时的缩放反馈，体验更好 */
+.game-card:active { 
+    transform: scale(0.97);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.game-name { 
+    font-size: 18px; 
+    font-weight: 600; 
+}
+
+.game-desc { 
+    font-size: 13px; 
+    color: #888; 
+}
